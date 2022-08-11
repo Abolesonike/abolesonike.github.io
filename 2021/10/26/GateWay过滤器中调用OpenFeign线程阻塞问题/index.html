@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GateWay过滤器中调用OpenFeign线程阻塞问题 | FizzyElf | Blog</title><meta name="keywords" content="Spring Cloud,GateWay,OpenFeign"><meta name="author" content="FizzyElf"><meta name="copyright" content="FizzyElf"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="问题现象123456789101112131415161718192021@Componentpublic class ShiroFilter implements GlobalFilter, Ordered &amp;#123;    AuthFeign authFeign;    @Override    public Mono&lt;Void&gt; filter(ServerWebExchange">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GateWay过滤器中调用OpenFeign线程阻塞问题">
-<meta property="og:url" content="http://example.com/2021/10/26/GateWay%E8%BF%87%E6%BB%A4%E5%99%A8%E4%B8%AD%E8%B0%83%E7%94%A8OpenFeign%E7%BA%BF%E7%A8%8B%E9%98%BB%E5%A1%9E%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:url" content="https://abolesonike.github.io/2021/10/26/GateWay%E8%BF%87%E6%BB%A4%E5%99%A8%E4%B8%AD%E8%B0%83%E7%94%A8OpenFeign%E7%BA%BF%E7%A8%8B%E9%98%BB%E5%A1%9E%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="FizzyElf | Blog">
 <meta property="og:description" content="问题现象123456789101112131415161718192021@Componentpublic class ShiroFilter implements GlobalFilter, Ordered &amp;#123;    AuthFeign authFeign;    @Override    public Mono&lt;Void&gt; filter(ServerWebExchange">
 <meta property="og:locale" content="zh_CN">
@@ -13,7 +13,7 @@
 <meta property="article:tag" content="GateWay">
 <meta property="article:tag" content="OpenFeign">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/10/26/GateWay%E8%BF%87%E6%BB%A4%E5%99%A8%E4%B8%AD%E8%B0%83%E7%94%A8OpenFeign%E7%BA%BF%E7%A8%8B%E9%98%BB%E5%A1%9E%E9%97%AE%E9%A2%98/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://abolesonike.github.io/2021/10/26/GateWay%E8%BF%87%E6%BB%A4%E5%99%A8%E4%B8%AD%E8%B0%83%E7%94%A8OpenFeign%E7%BA%BF%E7%A8%8B%E9%98%BB%E5%A1%9E%E9%97%AE%E9%A2%98/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -205,7 +205,11 @@ if ('Gitalk' === 'Gitalk' || !false) {
   function loadOtherComment () {
     loadGitalk()
   }
-}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="199" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><script>((window.gitter = {}).chat = {}).options = {
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="199" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><script>((window.gitter = {}).chat = {}).options = {
   room: 'Abolesonike/blog',
 };
 

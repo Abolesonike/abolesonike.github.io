@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo+butterfly主题集成Gitalk的坑 | FizzyElf | Blog</title><meta name="keywords" content="踩坑,Hexo,Gitalk"><meta name="author" content="FizzyElf"><meta name="copyright" content="FizzyElf"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="问题原因前些天正用Hexo + GitHub Pages做了一个博客，还为博客添加了butterfly主题，然后就想给博客添加一个评论系统。 发现GitHub提供了一个免费的评论系统，而且butterfly也是支持的。 然后就在网上根据别人的教程一顿操作。 完成后兴冲冲得跑去看效果，发现博客并没有出现评论区域。 又百度了半天想看看别人是怎么解决的，发现并没有什么效果。 网上一般都是解决Gitalk">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+butterfly主题集成Gitalk的坑">
-<meta property="og:url" content="http://example.com/2021/05/18/Hexo-butterfly%E4%B8%BB%E9%A2%98%E9%9B%86%E6%88%90Gitalk%E7%9A%84%E5%9D%91/index.html">
+<meta property="og:url" content="https://abolesonike.github.io/2021/05/18/Hexo-butterfly%E4%B8%BB%E9%A2%98%E9%9B%86%E6%88%90Gitalk%E7%9A%84%E5%9D%91/index.html">
 <meta property="og:site_name" content="FizzyElf | Blog">
 <meta property="og:description" content="问题原因前些天正用Hexo + GitHub Pages做了一个博客，还为博客添加了butterfly主题，然后就想给博客添加一个评论系统。 发现GitHub提供了一个免费的评论系统，而且butterfly也是支持的。 然后就在网上根据别人的教程一顿操作。 完成后兴冲冲得跑去看效果，发现博客并没有出现评论区域。 又百度了半天想看看别人是怎么解决的，发现并没有什么效果。 网上一般都是解决Gitalk">
 <meta property="og:locale" content="zh_CN">
@@ -13,7 +13,7 @@
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Gitalk">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://static01.imgkr.com/temp/4edc983b5ca243f6b0553a4f152ef868.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/05/18/Hexo-butterfly%E4%B8%BB%E9%A2%98%E9%9B%86%E6%88%90Gitalk%E7%9A%84%E5%9D%91/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://static01.imgkr.com/temp/4edc983b5ca243f6b0553a4f152ef868.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://abolesonike.github.io/2021/05/18/Hexo-butterfly%E4%B8%BB%E9%A2%98%E9%9B%86%E6%88%90Gitalk%E7%9A%84%E5%9D%91/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -210,7 +210,11 @@ if ('Gitalk' === 'Gitalk' || !false) {
   function loadOtherComment () {
     loadGitalk()
   }
-}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="199" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><script>((window.gitter = {}).chat = {}).options = {
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="199" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><script>((window.gitter = {}).chat = {}).options = {
   room: 'Abolesonike/blog',
 };
 
